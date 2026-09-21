@@ -1,0 +1,96 @@
+<!-- 
+  This page is intentionally NOT linked from the main navigation yet
+  (see the commented-out <li> in the nav below on every page).
+  It still works as a normal page — visiting the URL directly shows it —
+  it's just invisible to visitors until you add real posts and uncomment
+  the nav link. When you're ready:
+    1. Write your first post (duplicate blog-post-template.html).
+    2. Replace the template-preview card below with a real post card.
+    3. Uncomment the Blog <li> in the nav on every page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Luiz Valério Neto</title>
+<meta name="description" content="Notes on QA, testing, and building software worth trusting.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">✦</span>Luiz Valério</a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <!-- Blog link hidden until you're ready to publish. Uncomment to reveal it in the nav:
+        <li><a href="blog.html" class="nav-link is-active">Blog</a></li>
+        -->
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container" style="max-width:720px;">
+      <h1 data-reveal="fade">Blog</h1>
+      <p class="hero__lede" data-reveal="fade" style="margin-top:1rem;">Notes on testing, quality, and building software worth trusting. New here — first posts coming soon.</p>
+
+      <div class="blog-empty" data-reveal="fade" style="margin-top:2.5rem;">
+        <p class="text-soft">These pages are still blank — check back soon.</p>
+      </div>
+
+      <div class="blog-template-card" data-reveal="fade">
+        <div>
+          <h3 style="margin-bottom:0.3rem;">Template preview</h3>
+          <p class="text-soft" style="margin:0;">See how a post will look once it's published.</p>
+        </div>
+        <a class="btn btn--outline" href="blog-post-template.html">Preview template</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo"><span class="logo__mark">✦</span>Luiz Valério</a>
+      <p>Senior QA Engineer based in Santos, Brazil, working with product teams across the Americas.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <a href="https://www.linkedin.com/in/luizvneto/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Luiz Valério Neto. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
